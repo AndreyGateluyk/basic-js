@@ -19,15 +19,14 @@ const LOG = 0.693;
  *
  */
 function dateSample(sampleActivity) {
-  throw new NotImplementedError('Not implemented');
 	if (typeof sampleActivity !== "string") {
     return false;
   }
 	const numberActivity = parseFloat(sampleActivity)
-	if (isNaN(data) || numberActivity < 1 || numberActivity > 15) {
+	if (isNaN(numberActivity) || numberActivity < 1 || numberActivity > 15) {
     return false;
   }
-  let result = (Math.log(MODERN_ACTIVITY / data) * HALF_LIFE_PERIOD) / LOG;
+  let result = (Math.log(MODERN_ACTIVITY / numberActivity) * HALF_LIFE_PERIOD) / LOG;
 	return Math.ceil(result);
 }
 
