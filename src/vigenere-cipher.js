@@ -85,7 +85,7 @@ class VigenereCipheringMachine {
     if(this.bool === false) {
       return result.reverse().join('');
     }
-    return result.join('')
+    return result.join('');
   }
   decrypt(str, key) {
     if (!str || !key) {
@@ -140,7 +140,7 @@ class VigenereCipheringMachine {
     if(this.bool === false) {
       return result.reverse().join('');
     }
-    return result.join('')
+    return result.join('');
   }
 }
 
